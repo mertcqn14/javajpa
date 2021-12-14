@@ -1,0 +1,188 @@
+package ibmtal.com.instagram.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="users")
+public class User {
+	@id 
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id")
+	private int id;
+	@Column(name="name")
+	private String name;
+	@Column(name="username")
+	private String username;
+	@Column(name="password")
+	private String password;
+	@Column(name="followers")
+	private String followers;
+	@Column(name="followup")
+	private String followup;
+	@Column(name="photograph")
+	private String photograph;
+	@Column(name="profilePhoto")
+	private String profilePhoto;
+	@Column(name="stories")
+	private String stories;
+	@Column(name="shipments")
+	private String shipments;
+	@Column(name="comments")
+	private String comments;
+	@Column(name="Messages")
+	private String Messages;
+	@Column(name="flow")
+	private String flow;
+	@Column(name="reels")
+	private String reels;
+	@Column(name="shipment")
+	private String shipment;
+	public User() {
+		super();
+	}
+	public User(int id, String name, String username, String password, String followers, String followup,
+			String photograph, String profilePhoto, String stories, String shipments, String comments, String messages,
+			String flow, String reels, String shipment) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.followers = followers;
+		this.followup = followup;
+		this.photograph = photograph;
+		this.profilePhoto = profilePhoto;
+		this.stories = stories;
+		this.shipments = shipments;
+		this.comments = comments;
+		Messages = messages;
+		this.flow = flow;
+		this.reels = reels;
+		this.shipment = shipment;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getFollowers() {
+		return followers;
+	}
+	public void setFollowers(String followers) {
+		this.followers = followers;
+	}
+	public String getFollowup() {
+		return followup;
+	}
+	public void setFollowup(String followup) {
+		this.followup = followup;
+	}
+	public String getPhotograph() {
+		return photograph;
+	}
+	public void setPhotograph(String photograph) {
+		this.photograph = photograph;
+	}
+	public String getProfilePhoto() {
+		return profilePhoto;
+	}
+	public void setProfilePhoto(String profilePhoto) {
+		this.profilePhoto = profilePhoto;
+	}
+	public String getStories() {
+		return stories;
+	}
+	public void setStories(String stories) {
+		this.stories = stories;
+	}
+	public String getShipments() {
+		return shipments;
+	}
+	public void setShipments(String shipments) {
+		this.shipments = shipments;
+	}
+	public String getComments() {
+		return comments;
+	}
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
+	public String getMessages() {
+		return Messages;
+	}
+	public void setMessages(String messages) {
+		Messages = messages;
+	}
+	public String getFlow() {
+		return flow;
+	}
+	public void setFlow(String flow) {
+		this.flow = flow;
+	}
+	public String getReels() {
+		return reels;
+	}
+	public void setReels(String reels) {
+		this.reels = reels;
+	}
+	public String getShipment() {
+		return shipment;
+	}
+	public void setShipment(String shipment) {
+		this.shipment = shipment;
+	}
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
